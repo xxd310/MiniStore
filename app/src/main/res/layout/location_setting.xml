@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EEEEEE">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/title_bar_bg">
+        <ImageView
+                android:id="@+id/iv_back_location_setting"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库位设置"
+                android:textSize="26sp"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/location_list_title_bar_bg">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="库位名称"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="库位码"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="操作"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/location_list_footer_bg">
+                <ImageView
+                        android:id="@+id/iv_add_location_location_setting"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/add_location"/>
+            </LinearLayout>
+
+            <com.zhihuitech.ccgljyb.util.MyListView
+                    android:id="@+id/mlv_location_list_location_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:divider="#EEEEEE"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

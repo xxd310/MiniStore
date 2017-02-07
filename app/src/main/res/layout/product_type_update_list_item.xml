@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv_product_type_name_product_type_update_list_item"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="名称"
+          android:background="#EEEEEE"
+          android:textColor="#333333"
+          android:padding="10dp"
+          android:singleLine="true">
+</TextView>

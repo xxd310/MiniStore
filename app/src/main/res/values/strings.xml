@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CCGLJYB</string>
+    <string name="modify"><u>Modify</u></string>
+    <string name="delete"><u>Delete</u></string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zhihuitech.ccgljyb">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".AddLocationActivity">
+        </activity>
+        <activity android:name=".ReportQueryActivity">
+        </activity>
+        <activity android:name=".SettingActivity">
+        </activity>
+        <activity android:name=".LocationSettingActivity">
+        </activity>
+        <activity
+                android:name=".ProductTypeSettingActivity"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".EditLocationActivity">
+        </activity>
+        <activity
+                android:name=".LocationSelectActivity"
+                android:launchMode="singleTask">
+        </activity>
+        <activity
+                android:name=".StoreInfoActivity"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".RecordListActivity">
+        </activity>
+        <activity android:name=".UpdateSettingActivity">
+        </activity>
+        <activity android:name=".AuthorizationCenterActivity">
+        </activity>
+        <activity android:name=".InOutRecordDetailActivity">
+        </activity>
+        <activity android:name=".StoreInfoDetailActivity">
+        </activity>
+        <activity android:name=".CheckStorageActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".InStorageActivity">
+        </activity>
+        <activity android:name=".HelpActivity">
+        </activity>
+        <activity android:name=".ScanCodeQueryStorageActivity">
+        </activity>
+        <activity android:name=".OutStorageActivity">
+        </activity>
+        <activity android:name=".CheckStorageListActivity">
+        </activity>
+        <activity android:name=".CheckRecordDetailActivity">
+        </activity>
+        <activity android:name=".ProductDetailActivity">
+        </activity>
+        <service android:name=".SyncService" />
+        <service android:name=".UpdateAuthService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">简易仓库</string>
+    <string name="modify"><u>修改</u></string>
+    <string name="delete"><u>删除</u></string>
+</resources>
